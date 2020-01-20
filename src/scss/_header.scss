@@ -1,0 +1,16 @@
+.header {
+	min-height: 89px;
+	min-width: 320px;
+	padding-left: 40px;
+	border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+	background-color: #45DEFA;
+    background: linear-gradient(90deg, rgba(69,222,250,1) 0%, rgba(107,166,252,1) 100%);
+	color: #fff;
+	display: flex;
+	align-items: center;
+	.date {
+		font-size: 17px;
+		font-weight: 500;
+	}
+}

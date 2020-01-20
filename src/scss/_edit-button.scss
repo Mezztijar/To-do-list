@@ -1,0 +1,10 @@
+.edit-wrapper {
+    position: absolute;
+    right: -30px;
+    top: -18px;
+    opacity: 0.4;
+    transition: all .4s linear;
+    .edit-btn {
+        width: 20px;
+    }
+}

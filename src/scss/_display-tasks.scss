@@ -1,0 +1,68 @@
+.display-tasks {
+	.task-item {
+		min-height: 105px;
+		border-bottom: 1px solid #e6e1e1;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: column;
+		padding-left: 40px;
+		cursor: pointer;
+		position: relative;
+		transition: all .4s linear;
+		background: #fff;
+		&:hover {
+			transform: scale(1.1);
+			box-shadow: 0 0 28px 8px rgba(69, 222, 250, 0.3);
+			z-index: 10;
+			border-color: #fff;
+			&:after, .delete-btn, .edit-wrapper {
+				opacity: 1;
+			}
+		}
+		&:after {
+			content: "";
+			height: calc(100% + 1px);
+			width: 8px;
+			background-color: #6BC8FC;
+			position: absolute;
+			left: 0;
+			top: 0;
+			opacity: 0;
+		}
+		&.check .text{
+			color: #ada9a9;
+			&:after {
+				content: "";
+				width: calc(100% + 30px);
+				height: 1px;
+				background-color: #ada9a9;
+				position: absolute;
+				left: -15px;
+				top: 50%;
+			}
+		}
+
+		.text-wrapper {
+			max-width: fit-content;
+			position: relative;
+		}
+		.text {
+			color: #464242;
+			font-size: 18px;
+			font-weight: 400;
+			position: relative;
+			width: -moz-fit-content;
+			width: fit-content;
+
+		}
+
+		.check-icon {
+			width: 35px;
+			position: absolute;
+			right: 75px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+}
